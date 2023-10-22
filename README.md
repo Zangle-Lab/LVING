@@ -5,7 +5,7 @@ Lagrangian velocimetry for intracellular net growth (LVING) provides high resolu
 </p>
 
 <p align="center">
-<img src='images/F1.large.jpg' width="350"/>
+<img src='images/F1.large.jpg' width="500"/>
 </p>
 
 For details of computation and various applications of LVING, checkout the preprint on [biorXiv](https://doi.org/10.1101/2023.09.08.553132). The following applications are demonstrated:
