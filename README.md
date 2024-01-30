@@ -13,3 +13,34 @@ For details of computation and various applications of LVING, checkout the prepr
 * intracellular growth mapping during various stages of cell cycle
 * modes of growth inhibition in cells during chemotherapy
 * biomass degradation in cells during autophagy
+
+## How to use LVING code
+
+Start with the main file: `LVING_VelocityGridProfile.m`</b>
+
+Set the parameters for computation in the first section of the main file. Define the following values: </b>
+
+**tcg** : number of frames averaged over time </b>
+
+**xcg** : window size for spatial averaging of SSD, also size of control volume for tracking </b>
+
+**gs** : SSD window size, chose an odd number </b>
+
+**numf** : total number of time points considered for calculation </b>
+
+**sgap** : difference bwn frames undergoing SSD, must be less than (numf-tcg) </b>
+
+**bgap** : difference between frames when computing velocity for grid interpolation correction </b>
+
+**medfiltsz** : median filter size </b>
+
+**pxl_conv** : pixel size for imaging magnification in  &mu;m</b>
+
+**Ref_inc** : refractive index increment in &mu;m<sup>3</sup>/pg </b>
+
+**oplf** : wavelength of illumination light in &mu;m </b>
+
+**Pixel_area** : pixel size in &mu;m (pxl_conv*pxl_conv)</b>
+
+**w** : SSD search window size
+

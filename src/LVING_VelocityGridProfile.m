@@ -18,27 +18,28 @@ close all;
 clear all;
 
 %% set the parameters for computation
-for mm=1:12   % set up for multiple fovs
+
+% define file path where phase data is stored
+fdir='S:\Data\Soorya\FixedCellImaging_May2018\MCF7_35mm_120X\Trial1\';
+
+%***SY****%
+tcg=1;                         % # of frames averaged over time
+xcg=4;                         % window size for spatial averaging of SSD, also size of CV for tracking
+gs=15;                         % SSD window size, chose an odd number
+sgap=1;                        % difference bwn frames undergoing SSD, must be less than (numf-tcg)
+% bgap=4;                      % difference between frames when computing velocity for grid interpolation correction
+numf=30;                       % total number of time points considered for calculation (interval GFP was imaged in this dataset)
+medfiltsz=4*xcg;               % median filter size
+pxl_conv=0.21;                 % pixel size for 120X mag in um
+Ref_inc=0.18;                  % refractive index increment in um3/pg
+oplf=0.623;                    % wavelength of illumination light in um
+Pixel_area=pxl_conv*pxl_conv;  % pixel size in um
+w=3*gs;                        % SSD search window size
+%***SY***%
+
+for mm = 1:12   % set up for multiple fovs
 
     for rr=1:4     % for loop over multiple time points for each fov
-
-        % define file path where phase data is stored
-        fdir='S:\Data\Soorya\FixedCellImaging_May2018\MCF7_35mm_120X\Trial1\';
-
-        %***SY****%
-        tcg=1;                         % # of frames averaged over time
-        xcg=4;                         % window size for spatial averaging of SSD, also size of CV for tracking
-        gs=15;                         % SSD window size, chose an odd number
-        sgap=1;                        % difference bwn frames undergoing SSD, must be less than (numf-tcg)
-        % bgap=4;                      % difference between frames when computing velocity for grid interpolation correction
-        numf=30;                       % total number of time points considered for calculation (interval GFP was imaged)
-        medfiltsz=4*xcg;               % median filter size
-        pxl_conv=0.21;                 % pixel size for 120X mag in um
-        Ref_inc=0.18;                  % refractive index increment in um3/pg
-        oplf=0.623;                    % wavelength of illumination light in um
-        Pixel_area=pxl_conv*pxl_conv;  % pixel size in um
-        w=3*gs;                        % SSD search window size
-        %***SY***%
 
         fstart=((numf/2)*(rr-1))+1;
 
