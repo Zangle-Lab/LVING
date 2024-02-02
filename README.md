@@ -20,6 +20,8 @@ Start with the main file: `LVING_VelocityGridProfile.m`</b>
 
 Set the parameters for computation in the first section of the main file. Define the following values: </b>
 
+**fdir** : path to the mat microscopy image data
+
 **tcg** : number of frames averaged over time </b>
 
 **xcg** : window size for spatial averaging of SSD, also size of control volume for tracking </b>
@@ -44,3 +46,6 @@ Set the parameters for computation in the first section of the main file. Define
 
 **w** : SSD search window size
 
+Run the code using a 2D time lapse image input.
+
+Download an example dataset [here](add zenodo dataset link here!!!)
