@@ -95,7 +95,7 @@ for mm = 1:12   % set up for multiple fovs
         %% compute the intracellular velocity and store results in terms of sptial grid interpolation over time
         
         for kk=1:kkf 
-                CurrD = gpuArray(Abkg_stored2(:,:,kk));
+                CurrD = gpuArray(Abkg_stored2(:,:,kk)); % load images on gpu
                 NextD = gpuArray(Abkg_stored2(:,:,kk+1));
                 XCs=SSD_corr(NextD,CurrD,gs); 
                 clear CurrD NextD;
@@ -161,12 +161,12 @@ for mm = 1:12   % set up for multiple fovs
         Abkg_mass=zeros(sz(1)-(2*xcg),sz(2)-(2*xcg),kkf+1,'single');
         MassAm=zeros(kkf+1,1,'single');
         mass=MassAm;
+        % consider the areas in the QPI image with minimum massThresh value 
+        % as the value in other regions are in range of QPI measurement error
         Abkg_mask2=Abkg_stored2(:,:,1)>massThresh;
         Abkg_stored3=(Abkg_stored2(:,:,1)).*Abkg_mask2;
         SOPL1=movsum(movsum(Abkg_stored3,xcg,1),xcg,2);
         Abkg_mass(:,:,1)=(SOPL1(xcg+1:sz(1)-xcg,xcg+1:sz(2)-xcg))/(xcg*xcg);
-        % Abkg_massch=zeros(sz(1));
-        % Abkg_massavg=zeros(sz(1));
         mass(1)=sum(sum(Abkg_stored3(xcg+1:sz(1)-xcg,xcg+1:sz(2)-xcg,1)));
         MassAm(1)=sum(sum(Abkg_mass(:,:,1)));
         for kk=1:kkf
@@ -176,6 +176,7 @@ for mm = 1:12   % set up for multiple fovs
             SOPL=Abkg_stored3;
             xex=XS(:,:,kk+1);
             yey=YS(:,:,kk+1);
+            % compute the deformed control volume image for next time point
             Abkg_mass(:,:,kk+1)=CVtracking(xex,yey,xcg,Abkg_stored3);
             MassAm(kk+1)=sum(sum(Abkg_mass(:,:,kk+1)));
             fprintf('Completed CV loop %d\n',kk);

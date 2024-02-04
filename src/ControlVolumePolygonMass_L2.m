@@ -1,3 +1,8 @@
+
+% The function uses shoelace algorithm to compute the mask of CV
+% The output is the mask of control volume after tracking through one time
+% point
+
 function [mask]=ControlVolumePolygonMass_L2(x, y, sz)
 
 

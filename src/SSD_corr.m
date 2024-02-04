@@ -2,6 +2,7 @@
 % function returns the SSD computed between two images (CurrD and NextD) 
 % over overlapping regions of size grid
 % SS is ndarray of all SSDs computed 
+
 function [SS]=SSD_corr(CurrD,NextD,grid)
 
 [l,c]=size(CurrD);

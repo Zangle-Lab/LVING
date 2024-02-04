@@ -1,3 +1,6 @@
+
+% function to check if the polygon is convex
+
 function [check]=checkConvex(x,y)
 
 ds1(1)=x(2)-x(1);
