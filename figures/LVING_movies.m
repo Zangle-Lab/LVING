@@ -50,7 +50,7 @@ for dd=7:30
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
     textup=sprintf('%d hr',(dd-6));
     text('units','pixels','position',[20 30],'fontsize',20,'color','w','string',textup)
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[410 40],'fontsize',20,'color','w','string',textdown)
     hold off
     
@@ -117,7 +117,7 @@ for dd=13:22
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
     textup=sprintf('%d hr',(dd-8));
     text('units','pixels','position',[15 20],'fontsize',20,'color','w','string',textup)
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[380 40],'fontsize',20,'color','w','string',textdown)
     hold off
     
@@ -185,7 +185,7 @@ for dd=2:30
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
     textup=sprintf('%d hr',(dd-2));
     text('units','pixels','position',[20 30],'fontsize',20,'color','w','string',textup)
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[410 40],'fontsize',20,'color','w','string',textdown)
     hold off
     
@@ -255,7 +255,7 @@ for dd=2:14
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
     textup=sprintf('%d hr',(dd-2));
     text('units','pixels','position',[15 20],'fontsize',20,'color','w','string',textup)
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[380 40],'fontsize',20,'color','w','string',textdown)
     hold off
     
