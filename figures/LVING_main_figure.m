@@ -1,4 +1,4 @@
-%% LIVING setup figure elements
+%% LVING setup figure elements
 clear all; clc;
 
 %% figure 1a : Quantitative phase image of an RPE cell, colormap temp
@@ -15,7 +15,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=200; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 textup=sprintf('0 min');
 text('units','pixels','position',[20 320],'fontsize',15,'color','w','string',textup)
@@ -32,7 +32,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=200; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-k', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','k','string',textdown)
 textup=sprintf('10-0 min');
 text('units','pixels','position',[20 320],'fontsize',15,'color','k','string',textup)
@@ -65,9 +65,9 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=140; ybase=150; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[90 180],'fontsize',15,'color','w','string',textdown)
-textup=sprintf('1 µm/min');
+textup=sprintf('1 Âµm/min');
 text('units','pixels','position',[200 90],'fontsize',15,'color','k','string',textup)
 
 se90 = strel('line', 3, 90);
@@ -90,9 +90,9 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=140; ybase=150; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[90 180],'fontsize',15,'color','w','string',textdown)
-textup=sprintf('1 µm/min');
+textup=sprintf('1 Âµm/min');
 text('units','pixels','position',[200 90],'fontsize',15,'color','k','string',textup)
 
 
@@ -162,7 +162,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=200; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 %% figure 2a and 2b : G1 phase LVING growth map & fluorescence images
@@ -569,7 +569,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 %% figure 3b: puncta overlay image of RPE cell, S phase.
@@ -689,7 +689,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 
@@ -813,7 +813,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 % figure 4 d and e: Drug treatment homo results
@@ -936,7 +936,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 
@@ -1238,7 +1238,7 @@ if exist([fdir fname])~=0
     bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
     hold on; xbase=220; ybase=240; 
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
     pause(2);
 end
@@ -1490,7 +1490,7 @@ for zz=1:length(FrameEE)
 %     bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 %     hold on; xbase=220; ybase=240; 
 %     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-%     textdown=sprintf('10 µm');
+%     textdown=sprintf('10 Âµm');
 %     text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 %     axis image;
     figure(zz);
@@ -1509,7 +1509,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 
@@ -1614,7 +1614,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 figure(3); 
 load('Q:\Data\Soorya\MCF7AutophagyImaging120X_2019\P17_20Dec2019\MassGenResults_rev136\Results_2hr\WS13_cell5.mat');
@@ -1756,7 +1756,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 pause(2);
 
