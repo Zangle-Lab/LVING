@@ -1,11 +1,12 @@
 
-function [BWfinal,SS] = imagebackground_poly4(I)
 %function to find the background of an image, I, using a 4th order
 %polynomial fit to the background pixels
 %input: I, the grayscale image to find the background of
 %output: B, the background of I
 %method: find 'objects' in I, mask them from the image, paint the remaining
 %area using the inpaint_nans function
+
+function [BWfinal,SS] = imagebackground_poly4(I)
 
 % find high frequency features in image using sobel filter
 [junk threshold] = edge(I, 'sobel');

@@ -1,4 +1,8 @@
 
+% This function determines if the tracking of control volume has resulted
+% in a convex or concave polygon. The chnage in shape of the control volume
+% decides the math for computing the area of the polygon
+
 function [Value]=ControlVolumePolygonMass(x, y,I)
 
 %% size of image to match with the size of mask, all x are row no and y is column no
