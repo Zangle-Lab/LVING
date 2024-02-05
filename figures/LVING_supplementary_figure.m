@@ -1,4 +1,4 @@
-%% LIVING supplementary figures
+%% LVING supplementary figures
 clear all; clc;
 
 %% figure S2: Verification of QPI system baseline performance using bead data
@@ -93,9 +93,9 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=80; ybase=30; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[90 180],'fontsize',15,'color','w','string',textdown)
-textup=sprintf('5 µm');
+textup=sprintf('5 Âµm');
 text('units','pixels','position',[200 90],'fontsize',15,'color','k','string',textup)
 
 %% figure S3 b : RPE fixed cell LVING growth map overlayed on QPI image
@@ -114,7 +114,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=200; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 %% figure S3c: RPE fixed cell LVING vs QPI specific growth rate plot
@@ -726,7 +726,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 
@@ -848,7 +848,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 
@@ -902,7 +902,7 @@ barsize=10; pxlsize=0.238/1000;
 bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
 hold on; xbase=220; ybase=240; 
 H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-textdown=sprintf('10 µm');
+textdown=sprintf('10 Âµm');
 text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
 
 %% figure S12
@@ -1241,7 +1241,7 @@ if exist([fdir fname])~=0
     bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
     hold on; xbase=220; ybase=240; 
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
     pause(2);
 end
@@ -1545,7 +1545,7 @@ if exist([fdir fname])~=0
     bar_2 = barsize./pxlsize./1000./2; %half-width of scalebar, in pixels
     hold on; xbase=220; ybase=240; 
     H = plot([xbase-bar_2 xbase+bar_2], ybase+[0 0], '-w', 'LineWidth', 2);
-    textdown=sprintf('10 µm');
+    textdown=sprintf('10 Âµm');
     text('units','pixels','position',[240 35],'fontsize',15,'color','w','string',textdown)
     pause(2);
 end
