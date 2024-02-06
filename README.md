@@ -48,7 +48,7 @@ Set the parameters for computation in the first section of the main file. Define
 
 Run the code using a 2D time lapse image input.
 
-Download an example dataset [here](https://zenodo.org/doi/10.5281/zenodo.10616075)
+Download an example dataset [here](https://zenodo.org/doi/10.5281/zenodo.10616075).
 
 ## How to generate figures from the manuscript
 
@@ -58,7 +58,7 @@ LVING_main_figure.m: figures in the main manuscript file
 
 LVING_movies.m: generates images for creating movies
 
-LVING_supplementar_figure.m: figures for supplementary information
+LVING_supplementary_figure.m: figures for supplementary information
 
 LVING_derivation_figure.m: figures testing assumptions of LVING methods
 
